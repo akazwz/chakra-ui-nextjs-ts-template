@@ -1,15 +1,19 @@
-import type { NextPage } from 'next'
-import { Center } from '@chakra-ui/react'
+import { Center, Heading } from '@chakra-ui/react'
+
 import { Layout } from '../src/components/layout'
 
+import type { NextPage } from 'next'
+
 const Home: NextPage = () => {
-  return (
-    <Layout>
-      <Center>
-        Home
-      </Center>
-    </Layout>
-  )
+	return (
+		<Layout>
+			<Center>
+				<Heading>
+					Home
+				</Heading>
+			</Center>
+		</Layout>
+	)
 }
 
 export default Home
