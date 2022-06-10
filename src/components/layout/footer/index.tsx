@@ -16,7 +16,7 @@ export const Footer = () => (
 			<Stack direction="row" spacing="4" align="center" justify="space-between">
 				<HStack>
 					<Logo size="21px" />
-					<Copyright companyName={'NEXT'} alignSelf={{ base: 'center', sm: 'start' }} />
+					<Copyright name={'NEXT'} alignSelf={{ base: 'center', sm: 'start' }} />
 				</HStack>
 				<SocialMediaLinks />
 			</Stack>
