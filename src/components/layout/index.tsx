@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import { Box } from '@chakra-ui/react'
+
 import { Header } from './header'
 import { Footer } from './footer'
 
