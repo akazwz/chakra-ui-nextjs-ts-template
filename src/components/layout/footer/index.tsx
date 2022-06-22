@@ -1,24 +1,32 @@
-import { Box, HStack, Stack } from '@chakra-ui/react'
+import { Box, Stack, HStack, VStack } from '@chakra-ui/react'
 
 import { Copyright } from './Copyright'
 import { Logo } from '../../Logo'
 import { SocialMediaLinks } from './SocialMediaLinks'
+import { LanguagesSwitch } from '../../LanguagesSwitch'
+import { ColorModeToggle } from '../../ColorModeToggle'
 
 export const Footer = () => (
-	<Box
-		as="footer"
-		mx="auto"
-		maxW="7xl"
-		py="12"
-		px={{ base: '4', md: '8' }}
-	>
+	<Box as="footer" mx="auto" maxW="7xl" py="12" px={{ base: '4', md: '8' }}>
 		<Stack>
-			<Stack direction="row" spacing="4" align="center" justify="space-between">
+			<Stack
+				direction={{ base: 'column-reverse', md: 'row' }}
+				spacing="4"
+				align="center"
+				justify="space-between"
+			>
 				<HStack>
 					<Logo size="21px" />
-					<Copyright name={'NEXT'} alignSelf={{ base: 'center', sm: 'start' }} />
+					<Copyright
+						name={'NEXT'}
+						alignSelf={{ base: 'center', sm: 'start' }}
+					/>
 				</HStack>
-				<SocialMediaLinks />
+				<HStack>
+					<LanguagesSwitch />
+					<ColorModeToggle />
+					<SocialMediaLinks />
+				</HStack>
 			</Stack>
 		</Stack>
 	</Box>

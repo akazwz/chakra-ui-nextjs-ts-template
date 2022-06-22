@@ -2,7 +2,7 @@ import { ButtonGroup, ButtonGroupProps, IconButton } from '@chakra-ui/react'
 import { Github, Weibo, Twitter } from '@icon-park/react'
 
 export const SocialMediaLinks = (props: ButtonGroupProps) => (
-	<ButtonGroup variant="ghost" color="gray.600" {...props}>
+	<ButtonGroup variant="ghost" {...props}>
 		<IconButton
 			as="a"
 			href="#"

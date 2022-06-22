@@ -15,7 +15,6 @@ export const Header = () => {
 			<HStack>
 				<Logo size="37px" />
 				<Spacer />
-				<ColorModeToggle />
 			</HStack>
 		</Box>
 	)

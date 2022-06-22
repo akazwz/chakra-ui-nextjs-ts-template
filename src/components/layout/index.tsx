@@ -15,7 +15,7 @@ export const Layout = ({ children }: IProps) => {
 			<Box
 				as="main"
 				mx="auto"
-				minH="70vh"
+				minH="73vh"
 				py="3"
 			>
 				{children}

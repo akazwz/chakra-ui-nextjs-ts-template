@@ -1,4 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import { appWithTranslation } from 'next-i18next'
 
 import theme from '../src/theme'
 
@@ -12,4 +13,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 	)
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)
